@@ -18,7 +18,7 @@ document.getElementById('add-task').addEventListener('click', function() {
         });
 
         const taskTextElement = document.createElement('span');
-        taskTextElement.className = 'task-text';
+        taskTextElement.className = 'task-text'; 
         taskTextElement.textContent = taskText;
 
         const deleteButton = document.createElement('button');
