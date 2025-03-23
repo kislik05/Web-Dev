@@ -1,0 +1,6 @@
+<app-launch-filter (filter)="filterLaunches($event)"></app-launch-filter>
+<ul>
+    <li *ngFor="Let app-launch-filter">
+        {{launch.name}} - {{launch.success ? 'Успешный': 'Неудачный'}}
+    </li>
+</ul>    
