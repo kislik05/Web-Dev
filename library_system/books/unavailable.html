@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Недоступные книги</title>
+</head>
+<body>
+    <h1>Книги, которых нет в наличии:</h1>
+    <ul>
+    {% for book in books %}
+        <li>
+            {{ book.title }} (Автор: {{ book.author }})
+            <br>
+            Последняя выдача: {{ book.get_most_recent_loan }}
+        </li>
+    {% empty %}
+        <li>Все книги доступны!</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
